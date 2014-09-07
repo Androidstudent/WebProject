@@ -1,0 +1,191 @@
+<html>
+<head>
+<style>
+.star{
+color:red;
+}
+body{
+
+}
+#contentdiv
+{	
+	padding-top:20px;
+   padding-left:50px;
+   height=100%;
+   width=100%;
+    background-color:#fcfcfc;
+   
+    text-align: left;
+    color: #385A9A ;
+    font-size: 20px;
+  
+}
+#add{
+float:left;
+}
+.buttonclass
+{
+    background-color:#385A9A;
+    color:#FFFFFF;
+    font-weight:bold;
+    height:30px;
+    border-style:outset;
+    border-color:#385AFF;	
+    font-size:14px;  
+}
+
+input, textarea, select
+{	
+    
+    padding: 5px 15px;				
+    background: #fff;
+    border: 1px solid #D7E9F9;
+    border-radius: 5px;	
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+    -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+    
+}
+#msg{
+text-align:center;
+font-size:70px;
+color:#444444;
+}
+</style>
+<script>
+
+function validate(){
+	document.getElementById('fnSpan').innerHTML="*";
+    document.getElementById('lnSpan').innerHTML="*";
+    document.getElementById('pSpan').innerHTML="*";
+    document.getElementById('cpSpan').innerHTML="*";
+    document.getElementById('mSpan').innerHTML="";
+    document.getElementById('rdSpan').innerHTML="*";
+    document.getElementById('chSpan').innerHTML="*";
+    document.getElementById('slSpan').innerHTML="*";
+    document.getElementById('taSpan').innerHTML="*";
+       
+	var retvalue = true;
+	var radio = document.getElementsByName("gender");
+	var r = -1;
+	var check = document.getElementsByName("gadget");
+	var c = -1;
+	var sel = document.getElementById("Device");
+	var op = sel.options[sel.selectedIndex].value;
+	var op1 = sel.options[sel.selectedIndex].text;
+	var area = document.getElementById("txt").value;
+	var firstName = document.getElementById("firstName").value;
+	var lastName = document.getElementById("lastName").value;
+	var password = document.getElementById("password").value;
+	var confPassword = document.getElementById("confPassword").value;
+	if(firstName == ""){
+	 document.getElementById("fnSpan").innerHTML="please enter your First Name...";
+	 retvalue = false;
+	}
+	if(lastName == ""){
+	document.getElementById("lnSpan").innerHTML="please enter your last Name...";
+	retvalue = false;
+	}
+	if(password == ""){
+	document.getElementById("pSpan").innerHTML="please enter your password...";
+	retvalue = false;
+	}
+	if(confPassword == ""){
+	document.getElementById("cpSpan").innerHTML="please enter your confirm Password...";
+	retvalue = false;
+	}
+	if(password != confPassword){
+	document.getElementById("mSpan").innerHTML="your password must be match....";
+	retvalue = false;
+	}
+	for(var i=0; i<radio.length; i++){
+		if(radio[i].checked){
+			alert("you are " + radio[i].value);
+			r = i;
+		}
+	}
+	if(r == -1){
+	document.getElementById("rdSpan").innerHTML="please select your gender..";
+	retvalue = false;
+	}
+	for(i=0; i<check.length; i++){
+		if(check[i].checked){
+			alert("you have a " + check[i].value);
+			c = i;
+		}
+	}
+	if(c == -1){
+	document.getElementById("chSpan").innerHTML="please choose your gadget..";
+	retvalue = false;
+	}
+	if(op == 0){
+	document.getElementById("slSpan").innerHTML="Please select a Device";
+	retvalue = false;
+	}
+	else
+	alert("Device = " + op1);
+
+	if(area === ''){
+	document.getElementById("taSpan").innerHTML="Please Your Address...";
+	retvalue = false;
+	}
+	return retvalue;
+}
+
+</script>
+</head>
+<body>
+<form onsubmit="return validate();">
+	<div id="contentdiv">
+		<h3><span class="star">* Indicates required feild</span></h3>
+			<p>
+				Enter your First Name: 
+				<input type="text" id="firstName"/> <span id="fnSpan" class="star">*</span>
+			</p>
+			<p>Enter your Last Name: 
+				<input type="text" id="lastName"/> <span id="lnSpan"class="star">*</span>
+			</p>
+			<p>Password: 
+				<input type="password" id="password"/> <span id="pSpan" class="star">*</span>
+			</p>
+			<p>Confirm Password:
+				<input type="password" id="confPassword"/> <span id="cpSpan" class="star">*</span>
+			</p>
+			<span id="mSpan" class="star"></span>
+			<p id="add">
+			Enter Your Address:
+			</p>
+			<p>
+				<textarea id="txt" rows="10" cols="15"></textarea> <span id="taSpan" class="star">*</span>
+			</p>
+			</p>
+			Select your gender:
+				<input type="radio" name="gender" value="Male" checked>Male</input>
+				<input type="radio" name="gender" value="Female">Female</input> <span id="rdSpan" class="star">*</span>
+			
+			<p>
+				<input type="checkbox" name="gadget" value="Mobile"> I have a Mobile</input>
+				<input type="checkbox" name="gadget" value="Tablet">I have a Tablet</input> <span id="chSpan" class="star">*</span>
+			</p>
+			<p>
+Select Your area of interest:
+<select id="Device">
+	<option value="0">--Select--</option>
+	<option value="1">Mobiles</option>
+	<option value="2">Tablets</option>
+	<option value="3">Accessories</option>
+</select> <span id="slSpan" class="star">*</span></p>
+
+<input class="buttonclass" type="submit" name="submit" value="submit"></input>
+</br></br></br>
+<div align="center">
+	<img src="images/lgin.jpg"/>
+<div>
+</br></br></br>
+<div id="msg">
+	You're Setisfaction...... Is Our Moto 
+</div>
+</div>
+</form>
+</body>
+</html>
