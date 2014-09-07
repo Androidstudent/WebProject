@@ -1,0 +1,371 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="home">
+    <header data-role="header">
+        <h1>Toronto Tourism</h1>
+        <div data-role="navbar">
+          <ul>
+              <li><a href="#home" data-icon="home" class="ui-btn-active" data-theme="b">Home</a></li>
+              <li><a href="#getstart" data-icon="star" data-theme="b">Get Start</a></li>
+              <li><a href="#contactus" data-icon="info" data-theme="b" data-transition="slide">Contact Us</a></li>
+          </ul>
+        </div>
+    </header>
+
+	<section data-role="content">	
+	<img src="images/2.jpg" width="310" height="100" alt="image2">
+	<div class="ui-grid-a">
+    
+		<div class="ui-block-a">
+        <img src="images/3.jpg" width="150" height="100" alt="image3">
+        <h4><a href="#ottawa"> Ottawa</a></h4>
+        <p>The Capital city of Canada</p>
+        </div>
+    
+		<div class="ui-block-b">
+        <img src="images/4.jpg" width="150" height="100" alt="Mike">
+        <h4><a href="#mike"> La CN Tower</a></h4>
+        <p> The Highest Tower in Canada</p>
+		</div>
+	
+	</div>
+	</section>
+	
+</div>
+
+
+<div data-role="page" id="getstart">
+    <header data-role="header">
+        <h1>Toronto Tourism</h1>
+        <div data-role="navbar">
+          <ul>
+              <li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
+              <li><a href="#getstart" data-icon="star" class="ui-btn-active" data-theme="b">Get Start</a></li>
+              <li><a href="#contactus" data-icon="info" data-theme="b" data-transition="slide">Contact Us</a></li>
+          </ul>
+        </div>
+    </header>
+     <section data-role="content">
+         <div class="content-primary">	
+             <ul data-role="listview">
+                 <li>
+                     <a href="#see&do">
+                     <img src="images/seendo.jpg" alt="see&do">
+                     <h3>See & Do</h3>
+                     <p>Explore The Outstanding Canada</p>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="#packages">
+                     <img src="images/package.jpg" alt="Packages">
+                     <h3>Tour Packages</h3>
+                     <p>Sweet Deals, Gift Packages For Your Travel</p>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="#stay">
+                     <img src="images/stay.png" alt="Stay">
+                     <h3>Stay</h3>
+                     <p>Find A Home Away From Your Home</p>
+                     </a>
+                 </li>
+				  <li>
+                     <a href="#eat&drinks">
+                     <img src="images/eatndrink.jpg">
+                     <h3>Eat & Drink</h3>
+                     <p>Yummy Yummy For Your Tummy</p>
+                     </a>
+                 </li>
+				 <li>
+                     <a href="#events">
+                     <img src="images/events.png" alt="Events">
+                     <h3>Events</h3>
+                     <p>Maximize Your Enjoyment And Memories</p>
+                     </a>
+                 </li>
+             </ul>
+         </div>
+     </section>
+    
+</div>
+
+<div data-role="page" id="see&do">
+    <header data-role="header">
+        <a href="#" data-role="button" 
+           data-icon="arrow-l" data-rel="back" 
+           data-transition="slide">Back</a>
+        <h1>TorontoTourism</h1>
+    </header>
+    <section data-role="content">
+		<div data-role="collapsible-set">
+			<div data-role="collapsible" >
+				<h3>Atraction</h3>
+				<img src="images/cntower.jpg" height="64px" width="64px" alt="CN Tower">
+				<h4>La CN Tower<br> Engineering Wonder of Canada</h4>
+				<p> Its 553m/1,815ft the CN Tower is an award-winning dining and 
+				entertainment destination.</p>
+				
+				<img src="images/harbourfront.jpg" height="64px" width="300px" alt="Harbourfront">
+				<h4>Harbourfront <br> Park and Recreation Centre</h4>
+				<p> Harbourfront Centre is a key cultural organization
+				on Toronto, Ontario's waterfront, situated at 235 Queens Quay West. </p>
+				
+			</div>
+			<div data-role="collapsible">
+				<h3>Local Trips</h3>
+				<img src="images/ripleys.jpg" height="64px" width="300px" alt="Ripley">
+				<h4>Ripleys Aquarium<br> </h4>
+				<p>Ripley's Aquarium of Canada is an aquarium in Toronto, Canada. 
+				The aquarium is one of three aquariums owned and operated by Ripley Entertainment.</p>
+				
+				<img src="images/bluffs.jpg" height="64px" width="300px" alt="Bluffs">
+				<h4>Scarborough Bluffs<br> Eastern Portion of Toronto's waterfront</h4>
+				<p>The Scarborough Bluffs, also known as The Bluffs, 
+				are an escarpment in the Scarborough district of Toronto, Ontario, Canada. </p>
+				
+			</div> 
+			<div data-role="collapsible">
+				<h3>Fun Trips</h3>
+				<img src="images/wonderland.jpg" height="64px" width="300px" alt="Wonderland">
+				<h4>Canada's Wonderland<br>Fun and Entertainment Unlimited</h4>
+				<p>Canada's Wonderland is a 330-acre theme park located in Vaughan, 
+				Ontario, Canada, a suburb directly north of Toronto.</p>
+				
+				<img src="images/niagara.jpg"  height="64px" width="300px" alt="Niagara">
+				<h4>Niagara Falls<br>Largest Waterfalls </h4>
+				<p>Niagara Falls is a Canadian city on the western bank
+				of the Niagara River in the Golden Horseshoe region of Southern Ontario</p>
+			</div>
+			
+			<div data-role="collapsible">
+				<h3>Arts & Gallery</h3>
+				
+				<img src="images/ago.jpg" height="64px" width="300px" alt="Mike">
+				<h4> Art Gallery Of Ontario<br> Art's and cultural representation</h4>
+				<p>The Art Gallery of Ontario is an art museum in Toronto's Downtown Grange
+				Park district, on Dundas Street West between McCaul Street and Beverley Street.</p>
+			</div>   
+		</div>
+    </section>
+</div>
+
+<div data-role="page" id="packages">
+	<header data-role="header">
+		  <a href="#" data-role="button" 
+           data-icon="arrow-l" data-rel="back" 
+           data-transition="slide">Back</a>
+        <h1>TorontoTourism</h1>
+	</header>
+	<section data-role="content">
+		<ul data-role="listview" data-split-icon="gear" data-inset="true">
+			<li><a href="#"><img src="images/gold.jpg" height="64px" width="64px" alt="Golden"><h3>Golden</h3><p>Flights + Hotels + All Amenities</p></a>
+				<a href="mailto:abc@abc.com" title="Send Email">Send Email / Inquiry</a>                    
+            </li>
+			<li><a href="#"><img src="images/silver.jpg" height="64px" width="64px" alt="Silver"><h3>Silver</h3><p>Flights + Hotels</p></a>
+				<a href="mailto:abc@abc.com" title="Send Email">Send Email / Inquiry</a>                    
+            </li>
+			<li><a href="#"><img src="images/bronze.jpg" height="64px" width="64px" alt="Bronze"><h3>Bronze</h3><p>Hotels + Food</p></a>
+				<a href="mailto:abc@abc.com" title="Send Email">Send Email / Inquiry</a>                    
+            </li>
+		</ul>
+
+	</section>
+</div>
+
+<div data-role="page" id="stay">
+	<header data-role="header">
+		  <a href="#" data-role="button" 
+           data-icon="arrow-l" data-rel="back" 
+           data-transition="slide">Back</a>
+        <h1>TorontoTourism</h1>
+	</header>
+	
+	<section data-role="content">
+		<ul data-role="listview">
+			<li><a href="#7star">7 Star Hotels<span class="ui-li-count"> 3 </span></a>
+			<ul data-role="listview">
+			<a href="#" data-role="button" 
+           data-icon="arrow-l" data-rel="back" 
+           data-transition="slide">Back</a>
+			<li> The Grand Marriot  </li>
+			<li> The Express Hotel  </li>
+			<li> Hotel Toronto International  </li>
+			
+			</ul>
+			</li>
+			<li><a href="#5star">5 Star Hotels<span class="ui-li-count">5</span></a>
+			<ul data-role="listview">
+			<a href="#" data-role="button" 
+           data-icon="arrow-l" data-rel="back" 
+           data-transition="slide">Back</a>
+			<li> Holiday Inn  </li>
+			<li> The Royal Garden Suites  </li>
+			<li> The Raddisson Hotel </li>
+			
+			</ul>
+			</li>
+			<li><a href="#3star">3 Star Hotels<span class="ui-li-count">25</span></a>
+			<ul data-role="listview">
+			
+			<a href="#" data-role="button" 
+			data-icon="arrow-l" data-rel="back" 
+			data-transition="slide">Back</a>
+			<li> Crown Plaza  </li>
+			<li> The Royal Homes  </li>
+			<li> Sheppard Inn  </li>
+			
+			</ul>
+			</li>
+			
+			<li><a href="#ordinary">Ordinary Hotels <span class="ui-li-count">125</span></a>
+			<ul data-role="listview">
+			<a href="#" data-role="button" 
+           data-icon="arrow-l" data-rel="back" 
+           data-transition="slide">Back</a>
+			<li> Tornto Rentals </li>
+			<li> Parkway Heights </li>
+			<li> Warden Holiday Suites  </li>
+			
+			</ul>
+			</li>
+		</ul>
+	</section>
+</div>
+
+<div data-role="page" id="eat&drinks">
+	<header data-role="header">
+		  <a href="#" data-role="button" 
+           data-icon="arrow-l" data-rel="back" 
+           data-transition="slide">Back</a>
+        <h1>TorontoTourism</h1>
+	</header>
+	<section data-role="content">
+		<ul data-role="listview" data-filter="true">
+			<li><a href="#bpizza">Boston Pizza</a></li>
+			<li><a href="#pizza2">Pizza Pizza</a></li>
+			<li><a href="#dq">DQ (Orange Julius)</a></li>
+			<li><a href="#mcd">Mc Donalds</a></li>
+			<li><a href="#timmy">Tim Hortans</a></li>
+			<li><a href="#starbucks">Starbucks</a></li>
+			<li><a href="#kfc">KFC Chicken</a></li>
+			<li><a href="#bnr">Baskin & Robbins</a></li>
+			<li><a href="#marriot">Marriot</a></li>
+			<li><a href="#ws">Willie Stouts</a></li>
+			<li><a href="#stlouis">St. Louis</a></li>
+			<li><a href="#LCBO">LCBO</a></li>
+</ul>
+
+	</section>
+</div>
+
+<div data-role="page" id="events">
+	<header data-role="header">
+		  <a href="#" data-role="button" 
+           data-icon="arrow-l" data-rel="back" 
+           data-transition="slide">Back</a>
+        <h1>TorontoTourism</h1>
+	</header>
+	<section data-role="content">
+		<ul data-role="listview">
+			<li data-role="list-divider">Summer Events</li>
+			<li><a href="#skyd">Sky Diving</a></li>
+			<li><a href="#scubad">Scuba Diving</a></li>
+			<li><a href="#damon">Holi Festival</a></li>
+		
+			<li data-role="list-divider">Future Events</li>
+			<li><a href="#walkd">Walk Downtown</a></li>
+			<li><a href="#fmc">Fall Music Competition</a></li>
+			<li><a href="#stt">Singing Talent of Toronto</a></li>
+    
+		</ul>
+	</section>
+</div>
+
+<div data-role="page" id="contactus">
+     <header data-role="header">
+        <a href="#" data-role="button" 
+           data-icon="arrow-l" data-rel="back" 
+           data-transition="slide">Back</a>
+        <h1>TorontoTourism</h1>
+    </header>
+    <section data-role="content"><h3>Contact Us</h3>
+        <form action="mobile.asp" method="post" 
+              data-ajax="false">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <label for="companyname">Type Of Place:</label>
+            <input type="text" name="companyname" 
+                   id="companyname">
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <label for="size">No. Of Persons</label>
+            <input type="range" name="size" id="size" 
+                   min="1" max="50" 
+                   value="1" step="1" 
+                   data-highlight="true"><br>
+            <label for="seekpackage">Seeking For Packages ?</label>
+            <select name="seekpackage" 
+                    id="seekpackage" 
+                    data-role="slider">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select> 
+            <fieldset data-role="controlgroup">
+                <legend>Which Package are you interested 
+                        in?</legend>
+                <input type="checkbox" name="cgold" 
+                       id="cgold">
+                <label for="cgold">Golden</label>
+                <input type="checkbox" name="csilver" 
+                       id="csilver">
+                <label for="csilver">Silver</label>
+                <input type="checkbox" name="cbronze" 
+                       id="cbronze">
+                <label for="cbronze">Bronze</label>
+            </fieldset>
+            <fieldset data-role="controlgroup" 
+                      data-type="horizontal">
+                <legend>Current Interest?</legend>
+                <input type="radio" name="fun" 
+                       id="fun">
+                <label for="fun">Fun</label>
+                <input type="radio" name="art" id="art">
+                <label for="art">Art</label>
+                <input type="radio" name="adventure" 
+                       id="adventure">
+                <label for="adventure">Adventure</label>
+            </fieldset>
+            <label for="hearaboutus" class="select">
+                   How did you hear about us?</label>
+            <select name="hearaboutus" id="hearaboutus">
+                <option value="google">
+                        Google Search</option>
+                <option value="kijiji">Kijiji </option>
+                <option value="tv">TV Ad</option>
+                <option value="word">From Frinds / Others</option>
+            </select>
+            <label for="questions">
+                   Questions/Comments:</label>
+            <textarea name="questions" id="questions">
+            </textarea><br>
+            <input type="submit" value="Submit Form">
+        </form>
+    </section>
+  
+</div>
+    
+
+</body>
+</html>
